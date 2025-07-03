@@ -46,33 +46,33 @@
 
 # Write a Python function to sum all the numbers in a List.
 
-# def add(numbers):
-#     total = 0
-#     for i in numbers:
-#         total = total + i
-#     return(total)
-#
-# print("Total numbers of sum is :", add([2,5,8]))
+def add(numbers):
+    total = 0
+    for i in numbers:
+        total = total + i
+    return(total)
+
+print("Total numbers of sum is :", add([2,5,8]))
 
 # (Using Recursion)
 
-# def add(numbers):
-#     if len(numbers) == 1:
-#         return (numbers[0])
-#     else:
-#         return (numbers[0]) + add(numbers[1:])
-#
-# print("Total numbers of sum is :", add([2,5,8]))
+def add(numbers):
+    if len(numbers) == 1:
+        return (numbers[0])
+    else:
+        return (numbers[0]) + add(numbers[1:])
+
+print("Total numbers of sum is :", add([2,5,8]))
 
 
 # Write a Python program to solve the Fibonacci Sequence using recursion
 
-# def fib(num):
-#     if num == 1:
-#         return (0)
-#     elif num == 2:
-#         return (1)
-#     else:
-#         return (fib(num - 1) + fib(num - 2))
-#
-# print(fib(22))
+def fib(num):
+    if num == 1:
+        return (0)
+    elif num == 2:
+        return (1)
+    else:
+        return (fib(num - 1) + fib(num - 2))
+
+print(fib(22))
